@@ -121,8 +121,6 @@ void CostmapToPolygonsDBSMCCH::initialize(rclcpp::Node::SharedPtr nh)
     BaseCostmapToPolygons::initialize(nh);
 
     costmap_ = NULL;
-    RCLCPP_INFO(getLogger(), "CostmapToPolygonsDBSMCCH initialized");
-    RCLCPP_INFO(getLogger(), "node name is %s", nh->get_name());
     nh->get_parameter_or<double>("cluster_max_distance", parameter_.max_distance_, parameter_.max_distance_);
     nh->get_parameter_or<int>("cluster_min_pts", parameter_.min_pts_, parameter_.min_pts_);
     nh->get_parameter_or<int>("cluster_max_pts", parameter_.max_pts_, parameter_.max_pts_);
