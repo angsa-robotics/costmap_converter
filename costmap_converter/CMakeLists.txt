@@ -24,6 +24,7 @@ find_package(tf2_ros REQUIRED)
 find_package(OpenCV REQUIRED)
 find_package(pluginlib REQUIRED)
 find_package(rclcpp REQUIRED)
+find_package(visualization_msgs REQUIRED)
 
 set(dependencies
     class_loader
@@ -37,6 +38,7 @@ set(dependencies
     OpenCV
     pluginlib
     rclcpp
+    visualization_msgs
 )
 
 include_directories(
