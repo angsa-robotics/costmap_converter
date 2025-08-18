@@ -25,6 +25,7 @@ find_package(OpenCV REQUIRED)
 find_package(pluginlib REQUIRED)
 find_package(rclcpp REQUIRED)
 find_package(visualization_msgs REQUIRED)
+find_package(nav2_ros_common REQUIRED)
 
 set(dependencies
     class_loader
@@ -39,6 +40,7 @@ set(dependencies
     pluginlib
     rclcpp
     visualization_msgs
+    nav2_ros_common
 )
 
 include_directories(
